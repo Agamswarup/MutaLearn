@@ -13,7 +13,7 @@ const cors = require("cors");
 const {cloudinaryConnect } = require("./config/cloudinary");
 const fileUpload = require("express-fileupload");
 const dotenv = require("dotenv");
-import {path} from require("path");
+const path =  require("path");
 const  _dirname= path.dirname("");
 const buildpath = path.join(_dirname,"../client/build");
 app.use(express.static(buildpath));
